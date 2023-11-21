@@ -2,26 +2,26 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { CLOSE_ICON, WIDGET_ICON } from "./assets.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import SocketProvider from "./context/SocketContext";
+import SocketProvider from "./context/SocketContext.jsx";
 
 import { I18nextProvider } from "react-i18next";
 import i18next from "i18next";
-import * as translations from "./translations";
+import * as translations from "./translations/index.js";
 
 import moment from "moment";
 import "moment/dist/locale/pt";
 import "moment/dist/locale/es";
 
 import { createTheme, ThemeProvider } from "@mui/material";
-import { UserContextProvider } from "./context/UserContext";
-import { SnackContextProvider } from "./context/SnackContext";
-import { WidgetContextProvider } from "./context/WidgetContext";
+import { UserContextProvider } from "./context/UserContext.jsx";
+import { SnackContextProvider } from "./context/SnackContext.jsx";
+import { WidgetContextProvider } from "./context/WidgetContext.jsx";
 
-import App from "./App";
-import Landing from "./pages/Landing";
-import ChatView from "./pages/ChatView";
-import ShowQr from "./pages/ShowQr";
-import { createSessionId } from "./common/createSessionId";
+import App from "./App.jsx";
+import Landing from "./pages/Landing.jsx";
+import ChatView from "./pages/ChatView.jsx";
+import ShowQr from "./pages/ShowQr.jsx";
+import { createSessionId } from "./common/createSessionId.js";
 
 const theme = createTheme({
   breakpoints: {
