@@ -1,0 +1,11 @@
+{
+  "select_language": "Language",
+  "languages": {
+    "en": "English",
+    "es": "Spanish",
+    "pt": "Portuguese"
+  },
+  "widget_settings": "Widget settings",
+  "notification_sounds": "Notification sounds",
+  "save_settings": "Save settings"
+}

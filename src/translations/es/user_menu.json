@@ -1,0 +1,11 @@
+{
+  "select_language": "Idioma",
+  "languages": {
+    "en": "Inglés",
+    "es": "Español",
+    "pt": "Portugués"
+  },
+  "widget_settings": "Configuración del widget",
+  "notification_sounds": "Sonidos de notificación",
+  "save_settings": "Guardar configuración"
+}

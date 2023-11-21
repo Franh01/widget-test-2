@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-main: #ffa35a;
+  --color-main-dark: #d18842;
+  --color-main-light: #ffbb8a;
+  --color-secondary: #087e8b;
+  --color-secondary-dark: #005d65;
+  --color-secondary-light: #2495a1;
+  --primary-text-color: #24374e;
+  --secondary-text-color: #43556c;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+code {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Button that creates users, orgs, etc */
+
+/* Scrollbar styles */
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #eaeaea;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #c2c2c2;
+  /* border-radius: 5px; */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #eaeaea;
+  /* border-radius: 5px; */
+}
