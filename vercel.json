@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/src/main.jsx", "destination": "/src/main.js" },
+    { "source": "/static/*", "destination": "/static/*" },
+    { "source": "/api/*", "destination": "/api/*" }
+  ]
+}
