@@ -1,12 +1,32 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    {
+      name: "jsx",
+      enforce: "pre",
+      transform(code, id) {
+        if (id.endsWith(".js") && code.includes("jsx")) {
+          return {
+            code: code.replace(
+              /(import.*from.*['"])(.*\.(jsx|js))(['"])/g,
+              "$1$2$3"
+            ),
+            map: null,
+          };
+        }
+      },
+    },
+  ],
+  esbuild: {
+    jsxFactory: "React.createElement",
+    jsxFragment: "React.Fragment",
+  },
   server: {
     host: true,
-    port: 3000, // This is the port which we will use in docker
+    port: 3000,
     strictPort: true,
     watch: {
       usePolling: true,
